@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+
+        <div class="container">
+            
+        <header>
+         <div id="header">
+         <h2 class="header-h2">Wedding Invitation</h2>
+         </div>   
+        </header>
+
+        <main>
+            <div class="row">
+               <section>
+                   <div class="col1"> 
+                    <ul class="ul">
+                        <li class="bg" id="formal" onclick="formalStyle()"><a href="#"> Formal</a></li>
+                        <li class="bg"><a href="#" id="springstyle" onclick="springStyle()">Spring </a>  </li>   
+                        <li class="bg" onclick="artStyle()"><span class="nowrap"><a href="#"> Art Deco</a></span></li>
+                    </ul>
+                      <div class="line"></div>
+
+                      <div class="form">
+                          <form action="" method="get" name="form-name">
+                            <label for="name">1st Name: </label>
+                            <input type="text" id="name" class="name" name="name" placeholder="Bride's name"  onkeyup="pa1()" />
+
+                            <label for="sname">2nd Name: </label>
+                            <input type="text" id="sname" class="sname" name="sname" placeholder="Groom's name" onkeyup="pa1()"/>
+
+                            <label for="lname">Last Name: </label>
+                            <input type="text" id="lname" name="lname" placeholder="Family name" onkeyup="pa3()"/>
+
+                            <label for="date">Date: </label>
+                            <input type="text" id="date" name="date" placeholder="Date"  onkeyup="pa4()"/>
+
+                            <label for="location">Location: </label>
+                            <input type="text" id="location" name="location" placeholder="Location" onkeyup="pa5()" />
+                          </form>
+                      </div>
+                    </div>
+                </section> 
+                <section>
+                    <div class="col2" id="col2">
+
+                        <div>
+                            <p id="show1">
+                                &nbsp;
+                            </p>
+                        </div>
+                        <div class="line"></div>
+                        <div id="show1-2">
+                            <p>
+                            You are cordially invited to celebrate the marriage of
+                            </p>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <p id="show1-5">
+                                &nbsp; 
+                            </p>
+                        </div>
+                        <div>
+                            <p id="show2">
+                                &nbsp;
+                            </p>
+                        </div>
+                        <div>
+                            <p id="show3">
+                                &nbsp;
+                            </p>
+                        </div>
+                        <div>
+                            <p id="show4">
+                                &nbsp;
+                            </p>
+                        </div>
+                       
+                    </div>
+                </section> 
+            </div>
+        </main>
+                <article>
+                    <form action="">
+                        <button id="reset" onclick="clearText()">Reset</button>
+                        <button id="screenshot" onclick="clearText()">ScreenShot</button>
+                    </form>
+                </article>
+
+                <footer>
+                    <div class="footer">
+                        <br>
+                        <a href="https://facebook.com" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com" class="fa fa-twitter"></a>
+                    </div>
+                    <br><br>
+                </footer>
+
+    </div>
+    
+    
+
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
